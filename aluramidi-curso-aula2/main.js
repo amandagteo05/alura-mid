@@ -4,13 +4,15 @@ function idElementoAudio () {
 
 document.querySelector('.tecla_pom').onclick = tocaSomPom;
 
-Const listadeTeclas = document.querySelectorAll('.tecla');
+const listadeTeclas = document.querySelectorAll('.tecla');
 
 let contador = 0,
 
-while(contador>9)
-{
-    listadeTeclas[contador].onclick=tocaSom
+while(contador<listadeTeclas.lenght){
+    listaDeTeclas[contador].onclick = function () {
+        tocaSom('#som_tecla_splash');
+    
+    };
     
     contador = contador + 1;
    
